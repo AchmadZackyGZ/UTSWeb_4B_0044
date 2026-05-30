@@ -50,3 +50,9 @@ function calculateTotal() {
   // Format angka ke format Rupiah secara dinamis
   totalPriceElement.textContent = "Rp " + total.toLocaleString("id-ID");
 }
+
+// Panggil fungsi calculateTotal saat halaman selesai dimuat
+costItems.forEach((item) => {
+  item.addEventListener("change", calculateTotal);
+});
+studentDiscount.addEventListener("change", calculateTotal);
