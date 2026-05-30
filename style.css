@@ -59,8 +59,13 @@ body {
   border-color: var(--accent-color);
 }
 
-/* Accordion */
 .accordion-button:not(.collapsed) {
   background-color: var(--bg-dark);
   color: var(--accent-color);
+}
+
+.form-control::placeholder,
+.form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+  opacity: 1;
 }
