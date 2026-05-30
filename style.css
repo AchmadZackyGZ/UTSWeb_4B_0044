@@ -13,3 +13,11 @@ body {
     -apple-system,
     sans-serif;
 }
+
+.bg-black {
+  background-color: var(--bg-darker) !important;
+}
+
+.text-muted {
+  color: #a0a0a0 !important;
+}
