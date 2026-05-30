@@ -34,3 +34,13 @@ body {
   transform: translateY(-5px);
   border-color: var(--accent-color) !important;
 }
+
+/* Portfolio Items */
+.portfolio-item > div {
+  transition: border-color 0.3s ease;
+}
+
+.portfolio-item > div:hover {
+  border-color: var(--accent-color) !important;
+  color: var(--accent-color);
+}
