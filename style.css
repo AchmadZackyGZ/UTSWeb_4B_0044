@@ -1,7 +1,15 @@
 /* Root Variables */
 :root {
-    --bg-darker: #050505;
-    --bg-dark: #121212;
-    --accent-color: #00ffcc;
-    --border-color: #333;
+  --bg-darker: #050505;
+  --bg-dark: #121212;
+  --accent-color: #00ffcc;
+  --border-color: #333;
+}
+
+body {
+  background-color: var(--bg-darker) !important;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
 }
