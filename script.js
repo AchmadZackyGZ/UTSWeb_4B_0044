@@ -31,3 +31,22 @@ document.addEventListener("DOMContentLoaded", function () {
 const costItems = document.querySelectorAll(".cost-item");
 const studentDiscount = document.getElementById("studentDiscount");
 const totalPriceElement = document.getElementById("totalPrice");
+
+function calculateTotal() {
+  let total = 0;
+
+  // Tambahkan harga dari setiap layanan yang dicentang
+  costItems.forEach((item) => {
+    if (item.checked) {
+      total += parseInt(item.value);
+    }
+  });
+
+  // Kalkulasi diskon mahasiswa: potongan 20% berarti harga akhir adalah 80% dari total
+  if (studentDiscount.checked) {
+    total = total * 0.8;
+  }
+
+  // Format angka ke format Rupiah secara dinamis
+  totalPriceElement.textContent = "Rp " + total.toLocaleString("id-ID");
+}
