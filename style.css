@@ -55,6 +55,12 @@ body {
 }
 
 .form-check-input:checked {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Accordion */
+.accordion-button:not(.collapsed) {
+  background-color: var(--bg-dark);
+  color: var(--accent-color);
 }
