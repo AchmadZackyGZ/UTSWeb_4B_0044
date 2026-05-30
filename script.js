@@ -14,6 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("active", "btn-light");
 
       const filterValue = this.getAttribute("data-filter");
+
+      // Tampilkan/Sembunyikan elemen DOM
+      portfolioItems.forEach((item) => {
+        if (filterValue === "all" || item.classList.contains(filterValue)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 });
