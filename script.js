@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // 1. DOM Manipulation: Portfolio Filter
+  // DOM Manipulation: Portfolio Filter
   const filterBtns = document.querySelectorAll(".filter-btn");
   const portfolioItems = document.querySelectorAll(".portfolio-item");
 
@@ -26,3 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// DOM Manipulation: Dynamic Price Calculator
+const costItems = document.querySelectorAll(".cost-item");
+const studentDiscount = document.getElementById("studentDiscount");
+const totalPriceElement = document.getElementById("totalPrice");
